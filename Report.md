@@ -17,3 +17,7 @@ We measured the traffic congestion patterns on the nearby street using the Raspb
 ### Data Plot 3
 
 ![Wifi Data Plot 3](https://github.com/ashleychong1/senior-design-hw-miniproject-team-21/blob/main/Figure_3.png)
+
+The data we collected was from an off-campus apartment in Allston, near a window that faces the nearby street. All three wifi scan trials showed differing levels of wireless activity in the area, with data plot 3 recording the least amount of activity and data plot 1 being recording the most. A good use case for the Raspberry Pi wifi scan could be to measure the traffic congestion or general traffic conditions at a certain time of the day in order to avoid large crowds when leaving the house.
+
+The main difficulty we faced was figuring out how to copy the JSON files that were created onto our personal laptops. Since the Raspberry Pi only has an older version of the Python library, we needed to run wifi_plot.py on a separate MacBook. We tried many times to copy the file using SCP, which required the MacBook to be connected to the Raspberry Pi. Despite many attempts at connecting the laptop to the Pi, both via wireless connection and via Ethernet cable, we still encountered errors when running the command `scp pi@raspberrypi.local:~/data/*.json .` in the laptop's CLI. In the end, we just decided to send a copy of the JSON files via email, and the rest of the project worked well after that.
